@@ -19,18 +19,18 @@ python3 --version
 git clone https://github.com/confluentinc/cp-helm-charts.git 
 
 # Set the GCP project ID
-PROJECT_ID="<put-your-project-id-here"
+PROJECT_ID="<put-your-project-id-here"  # CHANGE THIS
 
 # Set the GKE cluster details, for already existing clusters
-#CLUSTER_NAME="<your-cluster-name>"
-#ZONE="<your-favourite-zone>"
+#CLUSTER_NAME="<your-cluster-name>"  # CHANGE THIS
+#ZONE="<your-favourite-zone>"  # CHANGE THIS
 
 
 
 # Set the GKE cluster details
 HOSTNAME=$(hostname | tr '[:upper:]' '[:lower:]' | tr -cd '[[:alnum:]]._-')
 CLUSTER_NAME="$HOSTNAME-cp"
-ZONE="europe-west1-b"
+ZONE="<your-favorite-zone>" # CHANGE THIS
 
 # Set the cluster size
 CLUSTER_SIZE="3"  # Number of nodes in the cluster
