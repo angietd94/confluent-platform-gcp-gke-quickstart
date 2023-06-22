@@ -19,11 +19,11 @@ python3 --version
 git clone https://github.com/confluentinc/cp-helm-charts.git 
 
 # Set the GCP project ID
-PROJECT_ID="sales-engineering-206314"
+PROJECT_ID="<put-your-project-id-here"
 
-# Set the GKE cluster details
-#CLUSTER_NAME="angelica-cp"
-#ZONE="europe-west1-b"
+# Set the GKE cluster details, for already existing clusters
+#CLUSTER_NAME="<your-cluster-name>"
+#ZONE="<your-favourite-zone>"
 
 
 
@@ -35,7 +35,7 @@ ZONE="europe-west1-b"
 # Set the cluster size
 CLUSTER_SIZE="3"  # Number of nodes in the cluster
 
-# Set the node machine type
+# Set the node machine type, also you can change it.
 MACHINE_TYPE="n1-standard-4"  # Machine type for each node in the cluster
 
 # Set the Confluent Platform version
